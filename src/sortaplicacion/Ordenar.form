@@ -9,16 +9,6 @@
             <Property name="text" type="java.lang.String" value="Opciones"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Limpiar"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Salir"/>
@@ -29,11 +19,37 @@
             </MenuItem>
           </SubComponents>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Metodos"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="MergeSort"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="QuickSort"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
       </SubComponents>
     </Menu>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Proyecto Orden"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
@@ -59,7 +75,6 @@
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jcbordenadores" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -95,6 +110,12 @@
                               <Component id="txtnumber7" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="txtnumber8" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtnumber9" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtnumber10" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnlimpiar" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="txtnumero5" min="-2" pref="40" max="-2" attributes="0"/>
@@ -104,11 +125,15 @@
                               <Component id="txtnumero7" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="txtnumero8" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtnumero9" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtnumero10" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="69" max="32767" attributes="0"/>
+              <EmptySpace pref="47" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -118,51 +143,40 @@
               <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtnumero1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumero2" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtnumero6" max="32767" attributes="0"/>
+                  <Component id="txtnumero5" max="32767" attributes="0"/>
+                  <Component id="txtnumero4" max="32767" attributes="0"/>
+                  <Component id="txtnumero3" max="32767" attributes="0"/>
+                  <Component id="txtnumero2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtnumero1" pref="31" max="32767" attributes="0"/>
+                  <Component id="txtnumero7" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtnumero10" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtnumero8" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtnumero9" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtnumber1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtnumber8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtnumber1" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber2" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber3" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber4" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber5" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber6" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber7" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber8" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumber9" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="txtnumber10" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="btnlimpiar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-              <Component id="jcbordenadores" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="33" max="32767" attributes="0"/>
+              <EmptySpace pref="44" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JComboBox" name="jcbordenadores">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
-            <StringItem index="0" value="InsertionSort"/>
-            <StringItem index="1" value="SelectionSort"/>
-            <StringItem index="2" value="BubleSort"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jcbordenadoresActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Desordenados:"/>
@@ -204,6 +218,22 @@
     <Component class="javax.swing.JTextField" name="txtnumber1">
     </Component>
     <Component class="javax.swing.JTextField" name="txtnumber8">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnlimpiar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Limpiar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnlimpiarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtnumero10">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtnumber10">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtnumero9">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtnumber9">
     </Component>
   </SubComponents>
 </Form>
